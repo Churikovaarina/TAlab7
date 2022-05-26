@@ -9,7 +9,7 @@ public class Filler {
     Random rand = new Random();
     public BTree fillWithRandomNumbers(BTree tree){
         for (int i = 0; i < 2000; i++) {
-            int int_random = rand.nextInt(100);
+            int int_random = rand.nextInt(10000);
             tree.insert(int_random);
         }
         return tree;
